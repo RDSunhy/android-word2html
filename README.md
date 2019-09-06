@@ -3,14 +3,14 @@
 ### Add Library
 ```Java
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+    repositories {
+        ...
+	maven { url 'https://jitpack.io' }
+    }
 }
 
 dependencies {
-    implementation 'com.github.hao896259037:android-word2html:Tag'
+    implementation 'com.github.hao896259037:android-word2html:1.0.0'
 }
 ```
 ### Example
