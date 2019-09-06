@@ -24,10 +24,17 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation files('libs/commons-codec-1.14-SNAPSHOT.jar')
+    implementation files('libs/dom4j-1.6.1.jar')
+    implementation files('libs/poi-3.9-20121203.jar')
+    implementation files('libs/poi-ooxml-3.9-20121203.jar')
+    implementation files('libs/poi-ooxml-schemas-3.9-20121203.jar')
+    implementation files('libs/poi-scratchpad-3.9-20121203.jar')
+    implementation files('libs/stax-api-1.0.1.jar')
+    implementation files('libs/xmlbeans-2.3.0.jar')
 }
