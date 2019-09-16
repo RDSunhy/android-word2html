@@ -2,12 +2,15 @@
 
 ### Add Library
 ```Java
+//build.gradle
 allprojects {
     repositories {
         ...
 	    maven { url 'https://jitpack.io' }
     }
-
+}
+//app/build.gradle
+android{
     defaultConfig{
         ...
         multiDexEnabled true
