@@ -5,7 +5,17 @@
 allprojects {
     repositories {
         ...
-	maven { url 'https://jitpack.io' }
+	    maven { url 'https://jitpack.io' }
+    }
+
+    defaultConfig{
+        ...
+        multiDexEnabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
