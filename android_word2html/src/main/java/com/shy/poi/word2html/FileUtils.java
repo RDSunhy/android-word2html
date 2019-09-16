@@ -41,8 +41,8 @@ public class FileUtils {
             if (!dirFile.exists()) {
                 dirFile.mkdir();
             }
-            Log.e("dir_path",dir_path);
             File myFile = new File(file_path);
+            Log.e("dir_path",dir_path);
             Log.e("file_path",file_path);
             myFile.createNewFile();
         } catch (Exception e) {
