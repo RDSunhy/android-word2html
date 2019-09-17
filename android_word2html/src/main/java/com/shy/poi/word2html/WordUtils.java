@@ -77,11 +77,7 @@ public class WordUtils {
     /**
      * doc、docx 转 html
      */
-    public void word2html(){
-        /*docPath = sourceFilePath;
-        dir = htmlFilePath;
-        htmlPath = FileUtils.createFile(htmlFilePath, htmlFileName + ".html");
-        Log.d(TAG, "htmlPath=" + htmlPath);*/
+    public String word2html(){
         try {
             output = new FileOutputStream(new File(htmlPath));
             presentPicture = 0;
@@ -93,10 +89,13 @@ public class WordUtils {
             }
             output.write(htmlEnd.getBytes());
             output.close();
+            Log.e("html_save_Path",htmlPath);
+            return htmlPath;
         } catch (Exception e) {
             e.printStackTrace();
             Log.e("Error===",e.getMessage());
             Log.e("Error===",e.toString());
+            return "";
         }
     }
 

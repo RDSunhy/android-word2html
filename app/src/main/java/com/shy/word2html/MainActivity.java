@@ -50,10 +50,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         //                "</head>" +
                         //                "<body>";
                         //basicSet.setHtmlBegin(htmlBegin);
-                        WordUtils.getInstance(basicSet).word2html();
+                        String htmlSavePath = WordUtils.getInstance(basicSet).word2html();
                         //跳转到webview界面预览转换html文件
                         Intent i = new Intent(MainActivity.this,PreviewActivity.class);
-                        i.putExtra("path",htmlFilePath + "/" + htmlFileName + ".html");
+                        i.putExtra("path",htmlSavePath);
                         startActivity(i);
                     }
                 }).start();
