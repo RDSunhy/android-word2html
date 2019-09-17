@@ -23,7 +23,7 @@ android{
 }
 
 dependencies {
-    implementation 'com.github.hao896259037:android-word2html:1.1.0'
+    implementation 'com.github.hao896259037:android-word2html:1.2.0'
 }
 
 
@@ -41,7 +41,12 @@ BasicSet basicSet = new BasicSet(
 //Some configuration can be added...
 //The concrete in BasicSet.class
 //basicSet.setHtmlBegin(htmlBegin);
-WordUtils.getInstance(basicSet).word2html();
+String htmlSavePath = WordUtils.getInstance(basicSet).word2html();
+
+...
+//Render in a webview
+webView.loadUrl("file://"+htmlSavePath);
+
 ```
 
 ### Known Bug
