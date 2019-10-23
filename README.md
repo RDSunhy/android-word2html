@@ -25,7 +25,7 @@ android{
 }
 
 dependencies {
-    implementation 'com.github.hao896259037:android-word2html:1.2.0'
+    implementation 'com.github.RDSunhy:android-word2html:1.2.0'
 }
 
 
