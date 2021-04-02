@@ -2,6 +2,11 @@
 
 ### CSDN博文  [android word文档预览(支持doc/docx两种格式)](https://blog.csdn.net/qq_38356174/article/details/100915969)
 
+<p align="center">
+  Visit Count（from 2020/08/19）<br>
+  <img src="https://profile-counter.glitch.me/razerdp-basepopup/count.svg" />
+</p>
+
 ### Add Library
 ```Java
 //build.gradle
